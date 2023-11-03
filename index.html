@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/4e0a90f801.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Payment form example</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="w-100 rounded error-message-pay p-2 mb-3" type="text" value="Some fields are missing" readonly>
+                        </div>
+                        <div class="col-5 pb-3">
+                            <label for="card-info">Card #</label>
+                            <input type="password" name="card-info" class="w-100" placeholder="XXXXXXXXXXXXXXXX">
+                        </div>
+                        <div class="col-3 pb-3">
+                            <label for="card-info">CVC</label>
+                            <input type="number" name="card-info" class="w-100" placeholder="0000">
+                        </div>
+                        <div class="col-4 pb-3 fawesome-amount">
+                            <label for="card-info">Amount</label>
+                            <input type="number" name="card-info" class="w-100" placeholder="Amount">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <div class="col-6 pb-3">
+                            <label for="card-info">First name</label>
+                            <input type="text" name="card-info" class="w-100">
+                        </div>
+                        <div class="col-6 pb-3">
+                            <label for="card-info">Last name</label>
+                            <input type="text" name="card-info" class="w-100">
+                        </div>
+                        <div class="col-6 pb-3">
+                            <label for="card-info">City</label>
+                            <input type="text" name="card-info" class="w-100">
+                        </div>
+                        <div class="col-3 pb-3">
+                            <label for="card-info">State</label>
+                                <select class="w-100" name="card-info">
+                                    <option value="" disabled selected hidden>Pick a state</option>
+                                    <option value=santiago>Santiago</option>
+                                    <option value="pelotillehue">Pelotillehue</option>
+                                </select>
+                        </div>
+                        <div class="col-3 pb-3">
+                            <label for="card-info">Postal code</label>
+                            <input type="text" class="w-100" name="card-info">
+                        </div>
+                        <div class="col-6 pb-3">
+                            <label class=" pb-3">We accept:</label>
+                            <div class="rounded bg-secondary w-50 p-2 d-flex justify-content-between">
+                                <div>
+                                    <input type="radio" name="card-type" value="mastercard">
+                                    <i class="fa-brands fa-cc-mastercard"></i>
+                                </div>
+                                <div>
+                                    <input type="radio" name="card-type" value="visa">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                </div>
+                                <div>
+                                    <input type="radio" name="card-type" value="dinners-club">
+                                    <i class="fa-brands fa-cc-diners-club"></i>
+                                </div>
+                                <div>
+                                    <input type="radio" name="card-type" value="american-express">
+                                    <i class="fa-brands fa-cc-amex"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pb-3">
+                            <label for="card-info pb-3">Message</label>
+                            <textarea class="w-100" rows="4"></textarea>
+                            <p class="text-secondary"><small>Add any notes here</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-end">
+                    <button type="button" class="btn btn-secondary">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    </body>
+</html>

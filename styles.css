@@ -1,0 +1,45 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+::placeholder {
+    color: gray;
+}
+
+.fawesome-amount{
+    position:relative;
+}
+
+.fawesome-amount i{
+    position: absolute; 
+    left: 0px; 
+    top: 45%; 
+    color: gray;
+}
+
+*{
+    font-weight:500;
+}
+
+.error-message-pay{
+    background-color: rgb(245, 196, 196);
+    color:darkred;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    border: 2px solid rgb(233, 176, 176);
+}
+
+i{
+    color:white;
+}
+
+input{
+    padding: 4px;
+}
